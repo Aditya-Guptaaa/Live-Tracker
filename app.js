@@ -18,6 +18,9 @@ io.on("connection", function (socket) {
     socket.on("disconnect", function () {
         io.emit('user-disconnect', socket.id)
     })
+    socket.on("chat-message", (data) => {
+    io.emit("chat-message", data)
+})
 })
 app.get('/', function (req, res) {
     res.render('index')
