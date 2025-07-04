@@ -102,3 +102,5 @@ socket.on("chat-message", ({ username: sender, message }) => {
     // Scroll to bottom
     messagesDiv.scrollTop = messagesDiv.scrollHeight
 })
+
+
